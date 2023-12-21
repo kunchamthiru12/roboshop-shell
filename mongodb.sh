@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
@@ -33,4 +31,4 @@ fi # fi means revers of if ,indicating condition end
 
 cp  mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 
-VALIDATE $? "Copied mangoDB Repo" 
+VALIDATE $? "Copied MongoDB Repo" 
