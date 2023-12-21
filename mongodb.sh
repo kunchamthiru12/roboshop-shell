@@ -35,21 +35,21 @@ VALIDATE $? "Copied MongoDB Repo"
 
 dnf install mongodb-org -y  &>> $LOGFILE
 
-VALIDATe $? "installating  MongoDB"
+VALIDATE $? "installating  MongoDB"
 
 systemctl enable mongod &>> $LOGFILE
 
-VALIDATe $? "Enabling  MongoDB"
+VALIDATE $? "Enabling  MongoDB"
 
 systemctl  start mongod &>> $LOGFILE
 
-VALIDATe $? "starting  MongoDB"
+VALIDATE $? "starting  MongoDB"
 
 sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf &>> $LOGFILE
  
- VALIDATE $? "Remote access to MongoDB"
+VALIDATE $? "Remote access to MongoDB"
 
 systemctl restart mongod  &>> $LOGFILE
 
-VALIDATe $? "restarting  MongoDB"
+VALIDATE $? "restarting  MongoDB"
 
