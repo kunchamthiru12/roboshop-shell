@@ -52,7 +52,7 @@ else
     echo -e "roboshop user already exit $Y SKIPPING $N"
 fi    
 
-mkdir /app
+mkdir -p /app
 
 VALIDATE $? "creating app directory" 
 
@@ -62,7 +62,7 @@ VALIDATE $? "Downloading catalogue application"
 
 cd /app 
 
-unzip /tmp/catalogue.zip &>> $LOGFILE
+unzip -o /tmp/catalogue.zip &>> $LOGFILE
 
 
 VALIDATE $? "unzipping the catalogue" 
