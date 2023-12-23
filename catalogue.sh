@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-MONGDB_HOST= 172.31.92.76
+MONGDB_HOST= 172.31.42.26
 
 TIMESTAMP=$(date +%F-%H-%m-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
@@ -16,7 +16,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then 
         echo -e "$2 ... $R Failed $N"
-        
+    
     else
         echo -e "$2 ... $G success $N"
     fi          
