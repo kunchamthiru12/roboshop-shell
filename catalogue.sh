@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-MONGDB_HOST= 172.31.42.26
+MONGDB_HOST= mangodb.padimalayamuna.xyz
 
 TIMESTAMP=$(date +%F-%H-%m-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
