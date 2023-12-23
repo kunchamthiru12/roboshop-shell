@@ -52,8 +52,6 @@ else
     echo -e "roboshop user already exit $Y SKIPPING $N"
 fi    
 
-VALIDATE $? "creating roboshop user" 
-
 mkdir /app
 
 VALIDATE $? "creating app directory" 
