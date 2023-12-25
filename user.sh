@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-MONGDB_HOST= mongodb.padimalayamuna.xyz
+MONGDB_HOST=172.31.45.86
 
 TIMESTAMP=$(date +%F-%H-%m-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
@@ -96,7 +96,7 @@ dnf install mongodb-org-shell -y &>> $LOGFILE
 
 VALIDATE $? " Installing MongoDB client" 
 
-mongo --host $MONGODB_HOST </app/schema/user.js &>> $LOGFILE 
+mongo --host $172.31.45.86 </app/schema/user.js &>> $LOGFILE 
 
 VALIDATE $? " LOading user data into mongodb" 
 
