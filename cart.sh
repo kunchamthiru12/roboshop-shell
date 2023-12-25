@@ -9,6 +9,7 @@ MONGDB_HOST=172.31.45.86
 
 TIMESTAMP=$(date +%F-%H-%m-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
+exec &>$LOGFILE
 
 echo "script started executing at $TIMESTAMP" &>>$LOGFILE
 
