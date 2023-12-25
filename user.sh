@@ -98,7 +98,7 @@ VALIDATE $? " Installing MongoDB client"
 
 mongo --host $172.31.45.86 </app/schema/user.js &>> $LOGFILE 
 
-VALIDATE $? " Loading user data into mongodb" 
+VALIDATE $? " Loading user data into MongoDB" 
 
 
 
