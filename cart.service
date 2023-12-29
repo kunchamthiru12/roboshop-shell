@@ -2,7 +2,7 @@
 Description = Cart Service
 [Service]
 User=roboshop
-Environment=REDIS_HOST=172.31.18.165
+Environment=REDIS_HOST=172.31.92.106
 Environment=CATALOGUE_HOST=172.31.24.140
 Environment=CATALOGUE_PORT=8080
 ExecStart=/bin/node /app/server.js
