@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-MONGDB_HOST=172.31.45.86
+MONGDB_HOST=172.31.45.206
 
 TIMESTAMP=$(date +%F-%H-%m-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
